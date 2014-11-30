@@ -1,4 +1,4 @@
 heroku-demo
-===========
+=========
 
-Inclass demo of heroku for INFO 343.
+Files for in-class demo of Heroku, using Node.js

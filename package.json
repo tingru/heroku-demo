@@ -1,0 +1,16 @@
+{
+  "name": "heroku-demo",
+  "version": "1.0.0",
+  "description": "heroku in-class demo",
+  "main": "server.js",
+  "author": "Staffan Hellman",
+  "contributors": [{ 
+    "name": "Dave Stearns",
+    "email": "dlsinfo@uw.edu"
+  }],
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.9.3",
+    "express": "^4.10.2",
+  }
+}
