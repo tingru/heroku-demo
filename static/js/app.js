@@ -10,7 +10,16 @@ $(document).ready(function() {
 
     function submitEmail(event) {
         event.preventDefault();
-        // email info here!
+        var data = {
+            to: $('#submitForm input[name="email"]').val(),
+            subject: $('#submitForm input[name="subject"]').val(),
+            text: $('#submitForm input[name="text"]').val()
+        }
+        $.ajax('api/send', {
+            'data': data,
+            success: submitted,
+            error: failed
+        })
     }
 
     // shows the submitted thing for a bit
