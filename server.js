@@ -32,7 +32,10 @@ app.get('/api/send', function (req, res){
 });
 
 //start the web server
-var server = app.listen('8080', function() {
+var port = process.env.YOUR_PORT || process.env.PORT || 8080;
+var host = process.env.YOUR_HOST || ‘0.0.0.0’;
+
+app.listen(port, host, function() {
     console.log('listening for requests sent to http://localhost:%s', server.address().port);
 });
 
